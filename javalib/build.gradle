@@ -1,6 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.qbaowei.android'
+//group = 'com.qbaowei.android'
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
