@@ -28,7 +28,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     apt project(':javalib')
     compile project(':androidlib')
-    //compile 'com.github.qbaowei.GitPackSample:androidlib:1.4.0'
 }
 
 //subprojects {
