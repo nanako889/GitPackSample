@@ -28,28 +28,28 @@ dependencies {
     testCompile 'junit:junit:4.12'
     apt project(':javalib')
     compile project(':androidlib')
-    //compile 'com.github.qbaowei.GitPackSample:androidlib:1.0'
+    //compile 'com.github.qbaowei.GitPackSample:androidlib:1.4.0'
 }
 
-subprojects {
-    apply plugin: 'java'
-    apply plugin: 'maven'
-
-    sourceCompatibility = 1.7 // java 8
-    targetCompatibility = 1.7
-
-    task sourcesJar(type: Jar, dependsOn: classes) {
-        classifier = 'sources'
-        from sourceSets.main.allSource
-    }
-
-    task javadocJar(type: Jar, dependsOn: javadoc) {
-        classifier = 'javadoc'
-        from javadoc.destinationDir
-    }
-
-    artifacts {
-        archives sourcesJar
-        archives javadocJar
-    }
-}
+//subprojects {
+//    apply plugin: 'java'
+//    apply plugin: 'maven'
+//
+//    sourceCompatibility = 1.7 // java 8
+//    targetCompatibility = 1.7
+//
+//    task sourcesJar(type: Jar, dependsOn: classes) {
+//        classifier = 'sources'
+//        from sourceSets.main.allSource
+//    }
+//
+//    task javadocJar(type: Jar, dependsOn: javadoc) {
+//        classifier = 'javadoc'
+//        from javadoc.destinationDir
+//    }
+//
+//    artifacts {
+//        archives sourcesJar
+//        archives javadocJar
+//    }
+//}

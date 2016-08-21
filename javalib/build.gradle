@@ -1,8 +1,8 @@
 apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
 
-apply plugin: 'maven'
-
-group = 'com.github.javalib'
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -10,5 +10,6 @@ dependencies {
     compile 'com.squareup:javapoet:1.7.0'
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+group = 'com.qbaowei.android'
+
+
