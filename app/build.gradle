@@ -25,9 +25,12 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
+    provided project(':javalib')
     compile project(':androidlib')
-    compile project(':javalib')
-    //compile 'com.github.qbaowei.GitPackSample:androidlib:1.1.0'
+}
+
+allprojects {
+    version = "1.0"
 }
 
 subprojects {
